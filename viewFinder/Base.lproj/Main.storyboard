@@ -48,7 +48,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScY-SN-4kn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-909" y="-545"/>
+            <point key="canvasLocation" x="-504" y="-611"/>
         </scene>
         <!--Title-->
         <scene sceneID="2O5-mw-oq6">
@@ -67,9 +67,12 @@
                                     <action selector="takeSelfieTapped:" destination="Rb4-tk-2QG" eventType="touchUpInside" id="ObX-2b-Hho"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyN-bO-7lL">
-                                <rect key="frame" x="183" y="252" width="268" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyN-bO-7lL">
+                                <rect key="frame" x="173" y="254" width="268" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="FhJ-Bd-1Ga"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="268" id="WmF-mO-yGF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Choose From Library"/>
                             </button>
@@ -84,7 +87,7 @@
                                 <state key="normal" title="Albums"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErR-ci-zTT">
-                                <rect key="frame" x="148" y="371" width="108" height="66"/>
+                                <rect key="frame" x="153" y="392" width="108" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="Save!">
@@ -96,10 +99,13 @@
                         <viewLayoutGuide key="safeArea" id="YAb-kP-Yv2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="E9v-4i-8ap"/>
+                    <connections>
+                        <outlet property="newImage" destination="QlY-Ts-p7W" id="god-to-yTL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lug-8d-g3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-286" y="-545"/>
+            <point key="canvasLocation" x="207" y="-611"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qzL-6o-4ff">

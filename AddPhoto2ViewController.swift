@@ -33,6 +33,29 @@ class AddPhoto2ViewController: UIViewController, UIImagePickerControllerDelegate
         return 0
     }
     
+    
+        
+    
+    
+    @IBOutlet weak var newImage: UIImageView!
+    private func imagePickerController
+        (_picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            
+            if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                
+                newImage.image = selectedImage
+                
+        
+    }
+    
+    
+    
+}
+
+    
+
+
+
 
     /*
     // MARK: - Navigation
@@ -43,5 +66,6 @@ class AddPhoto2ViewController: UIViewController, UIImagePickerControllerDelegate
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

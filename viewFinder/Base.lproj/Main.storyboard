@@ -48,12 +48,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScY-SN-4kn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="-320"/>
+            <point key="canvasLocation" x="-909" y="-545"/>
         </scene>
         <!--Title-->
         <scene sceneID="2O5-mw-oq6">
             <objects>
-                <viewController id="Rb4-tk-2QG" customClass="AddPhotoViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rb4-tk-2QG" customClass="AddPhoto2ViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qj0-00-vQC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,6 +63,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="takeSelfieTapped:" destination="Rb4-tk-2QG" eventType="touchUpInside" id="ObX-2b-Hho"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyN-bO-7lL">
                                 <rect key="frame" x="183" y="252" width="268" height="130"/>
@@ -96,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lug-8d-g3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-320"/>
+            <point key="canvasLocation" x="-286" y="-545"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qzL-6o-4ff">
@@ -114,7 +117,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iry-28-3nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-261" y="-327"/>
+            <point key="canvasLocation" x="-1546" y="-545"/>
         </scene>
     </scenes>
     <resources>
